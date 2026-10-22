@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио Алексея - разработчика">
+    <link rel="stylesheet" href="style.css">
+    <title>Портфолио Алексея</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="letA">
+                <a href="https://github.com/roma111-ai" aria-label="GitHub профиль">
+                    <img src="Letter_a.png" alt="Логотип - буква A">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="imgeAndText">
+            <img src="Me_400x600.jpg" alt="Фото Алексея">
+            <div class="text-content">
+                <p>Привет, меня зовут Алексей. В настоящее время я учусь на втором курсе Московского международного колледжа It Top. В программировании с 7 класса и начинал свой путь с Python-а, после я пересел уже на другой язык - это С++. Мне нравится решать сложные задачи. Больше всего меня привлекает что-то чего я не знаю и не пробовал, я очень любознательный. На данный момент масштабных творений нет, но со всеми проектами Вы можете ознакомится в моём профиле на GitHub-е. Надеюсь немного Вас заинтересовал. Ниже представлены мои навыки. Все языки программирования я не знаю на совершенном уровне, но уверен, что соответствую Junior-ам.</p>
+            </div>
+        </div>
+
+        <div class="tables">
+            <div class="table1">
+                <div class="zag1">
+                    <h1>Hard Skills</h1>
+                </div>
+                <div class="stats">
+                    <p>Python</p>
+                    <p>C++</p>
+                    <p>Java</p>
+                    <p>JavaScript</p>
+                    <p>HTML&CSS</p>
+                    <p>MySQL</p>
+                    <p>Математика</p>
+                    <p>Git & GitHub</p>
+                    <p>Linux/Unix</p>
+                    <p>Docker</p>
+                    <p>REST API</p>
+                    <p>Алгоритмы и структуры данных</p>
+                </div>
+                <div class="scroll-hint">▼ Прокрутите для просмотра всех навыков ▼</div>
+            </div>
+            
+            <div class="table2">
+                <div class="zag2">
+                    <h1>Soft Skills</h1>
+                </div>
+                <div class="stats">
+                    <p>Упорство</p>
+                    <p>Открытость</p>
+                    <p>Обучаемость</p>
+                    <p>Умение работать в команде</p>
+                    <p>Ответственность</p>
+                    <p>Самостоятельность</p>
+                    <p>Анализ</p>
+                    <p>Критическое мышление</p>
+                    <p>Тайм-менеджмент</p>
+                    <p>Решение проблем</p>
+                    <p>Коммуникативные навыки</p>
+                    <p>Лидерские качества</p>
+                </div>
+                <div class="scroll-hint">▼ Прокрутите для просмотра всех навыков ▼</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://t.me/HeighTuser" aria-label="Telegram">
+            <img src="Telega_100x100 — копия (2).png" alt="Telegram иконка">
+        </a>
+        <a href="mailto:ваш.email@gmail.com" aria-label="Email" class="gmail">
+            <img src="Gmail.png" alt="Gmail иконка">
+        </a>
+    </footer>
+
+<!-- Вставьте в основной index.html перед </body> -->
+    <script>
+                // Простой и надежный вариант
+        (function() {
+            // Ждем загрузки DOM
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+            
+            function init() {
+                // Проверяем только через 0.5 секунды после загрузки
+                setTimeout(function() {
+                    // Текущая страница
+                    const currentPage = window.location.pathname;
+                    
+                    // Если уже на странице часов - выходим
+                    if (currentPage.includes('index_watch.html')) {
+                        return;
+                    }
+                    
+                    // Проверка размера экрана
+                    const width = window.innerWidth || document.documentElement.clientWidth;
+                    const height = window.innerHeight || document.documentElement.clientHeight;
+                    
+                    // Условие для часов
+                    if (width <= 320 && height <= 320) {
+                        // Используем replace вместо href, чтобы не добавлять в историю
+                        window.location.replace('index_watch.html');
+                    }
+                }, 500);
+            }
+        })();
+</script>
+
+</body>
+</html>
